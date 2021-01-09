@@ -1,0 +1,10 @@
+.question__proposals {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.question__name {
+    padding-bottom: 0.75rem;
+    text-align: center;
+}
