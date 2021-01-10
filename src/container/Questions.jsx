@@ -17,15 +17,22 @@ class Questions extends React.Component {
         }
     }
 
-    getRandomInt(max) {
-        return Math.floor(Math.random() * Math.floor(max))
+    getRandomInt(max, forbiddenIntList) {
+        const randomId = Math.floor(Math.random() * Math.floor(max))
+        if (forbiddenIntList.find(e => e.id === randomId)) {
+            return this.getRandomInt(max, forbiddenIntList)
+        } else {
+            return randomId
+        }
     }
 
     //TODO Improve this
-    getRandomProposal(proposalNumber, items) {
+    getRandomProposal(proposalNumber, items, currentItemId) {
         const randomProposal = []
         for (let i = 0; i < proposalNumber; i++) {
-            randomProposal.push(items[this.getRandomInt(items.length - 1)])
+            const randomId = this.getRandomInt(items.length - 1, [currentItemId, randomProposal.map(e => e.id)])
+
+            randomProposal.push(items[randomId])
         }
         return randomProposal;
     }
@@ -33,7 +40,13 @@ class Questions extends React.Component {
     handleSubmitResponse = (proposal) => {
         const responses = [
             ...this.state.responses,
-            { response: proposal, expected : this.state.currentQuestion.expectedItem }
+            {
+                response: proposal,
+                expected : {
+                    ...this.state.currentQuestion.expectedItem,
+                    expectedValue: this.props.quizzData.received.reduce((p,e) => p + this.state.currentQuestion.expectedItem[e], '')
+                }
+            }
         ]
         this.setState({
             responses,
@@ -42,9 +55,10 @@ class Questions extends React.Component {
     }
 
     getNextQuestion() {
-        const currentIndex = this.getRandomInt(quizzData.items.length) - 1
+        const currentIndex = this.getRandomInt(quizzData.items.length, []) - 1
         const currentItem = this.props.quizzData.items[currentIndex]
         const nextQuestion = {
+            proposalKey: this.props.quizzData.received,
             expectedItem: {
                 ...currentItem,
                 expectedName: this.props.quizzData.expected.reduce((p,e) => p + currentItem[e], '')
@@ -52,7 +66,7 @@ class Questions extends React.Component {
             questionName: this.props.quizzData.question,
             randomProposal: [
                 currentItem,
-                ...this.getRandomProposal(this.PROPOSAL_NUMBER - 1, this.props.quizzData.items)
+                ...this.getRandomProposal(this.PROPOSAL_NUMBER - 1, this.props.quizzData.items, currentItem.id)
             ]
         }
 
@@ -64,7 +78,6 @@ class Questions extends React.Component {
 
         return (
             <div className='questions__container'>
-
                 {state.responses.length === props.questionCount ? (
                     <Result responses={state.responses} />
                 ) : (

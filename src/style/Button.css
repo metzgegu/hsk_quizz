@@ -3,4 +3,5 @@ button {
     border: 2px solid #FAC08A;
     border-radius: 9px;
     padding: 9px;
+    cursor: pointer;
 }

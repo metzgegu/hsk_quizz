@@ -4,8 +4,8 @@ export const quizzData = {
     quizzName: 'HSK 1',
     quizzType: QUIZZ_TYPE.TRADUCTION,
     question: 'Veuillez choisir la bonne traduction pour',
-    received: ['car'],
-    expected: ['trad'],
+    received: ['trad'],
+    expected: ['car'],
     items: [
         {
             "id": 1,

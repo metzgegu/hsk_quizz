@@ -25,9 +25,9 @@ class Quizz extends React.Component {
 
                 <Button
                     onClick={() => this.setState(prevState => ({ quizzStarted: !prevState.quizzStarted }))}
-                    className={state.quizzStarted ? 'quizz__back' : ''}
+                    style={{ display: state.quizzStarted ? 'none' : 'block' }}
                 >
-                    {state.quizzStarted ? 'Retour' : `Start the ${props.quizzName} quizz`}
+                    Start the {props.quizzName} quizz
                 </Button>
             </div>
         )

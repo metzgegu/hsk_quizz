@@ -18,7 +18,7 @@ class Question extends React.Component {
                             key={index}
                             onClick={() => props.onSubmitResponse(proposal)}
                         >
-                            {proposal.car}
+                            {props.question.proposalKey.reduce((previousValue, key) => `${previousValue} ${proposal[key]}`, '')}
                         </Button>
                     ))}
                 </div>
