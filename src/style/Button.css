@@ -4,4 +4,5 @@ button {
     border-radius: 9px;
     padding: 9px;
     cursor: pointer;
+    width: 100%;
 }

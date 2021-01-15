@@ -10,17 +10,24 @@ class Question extends React.Component {
         return (
             <div className='question__container'>
                 <div className='question__name'>
-                    {props.question.questionName} <br/><b>{props.question.expectedItem.expectedName}</b>
+                    {props.question.questionName}
+                    <br/>
+                    <b className={props.question.expectedItem.expectedName.match(/[\u3400-\u9FBF]/) ? "chinese" : ""}>
+                        {props.question.expectedItem.expectedName}
+                    </b>
                 </div>
                 <div className='question__proposals'>
+                    <ul>
                     {props.question.randomProposal && shuffleArray(props.question.randomProposal).map((proposal, index) => (
-                        <Button
-                            key={index}
-                            onClick={() => props.onSubmitResponse(proposal)}
-                        >
-                            {props.question.proposalKey.reduce((previousValue, key) => `${previousValue} ${proposal[key]}`, '')}
-                        </Button>
+                        <li key={index}>
+                            <Button
+                                onClick={() => props.onSubmitResponse(proposal)}
+                            >
+                                {props.question.proposalKey.reduce((previousValue, key) => `${previousValue} ${proposal[key]}`, '')}
+                            </Button>
+                        </li>
                     ))}
+                    </ul>
                 </div>
             </div>
         )
