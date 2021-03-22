@@ -1,27 +1,37 @@
-.question__proposals {
+.container {
+    min-width: 10rem;
+    max-width: 20rem;
+    text-align: center;
+}
+
+.proposals {
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
 }
 
-.question__proposals ul {
+.proposals ul {
     list-style: none;
     width: 100%;
     padding: 0;
 }
-.question__proposals li {
+.proposals li {
     margin: 10px 0;
     width: 100%;
 }
-.question__name {
+.qname {
     padding-bottom: 0.75rem;
     text-align: center;
 }
-.question__name b {
+.name b {
     font-size: 36px;
     color: #ebb17c;
 }
 
-.question__name .chinese{
+.name .chinese{
     font-family: 'Ma Shan Zheng', cursive;
+}
+
+.incorrect {
+    border-color: #e76f51 !important;
 }
