@@ -30,18 +30,18 @@ export default function Parameter({ onSubmit }: Props) {
         <label htmlFor="pinyin">Display pinyin</label>
       </div>
 
-    <div className={styles.formNumberOfProposal}>
+      <div className={styles.formNumberOfProposal}>
         <input
-            type="number"
-            name="numberOfProposal"
-            id="numberOfProposal"
-            value={numberOfProposal}
-            min="1"
-            max="10"
-            onChange={(e) => setNumberOfProposal(parseInt(e.target.value))}
+          type="number"
+          name="numberOfProposal"
+          id="numberOfProposal"
+          value={numberOfProposal}
+          min="1"
+          max="10"
+          onChange={(e) => setNumberOfProposal(parseInt(e.target.value))}
         />
-        <label>Number of proposal</label>
-    </div>
+        <label htmlFor="numberOfProposal">Number of proposal</label>
+      </div>
 
       <button type="submit">GO</button>
     </form>
