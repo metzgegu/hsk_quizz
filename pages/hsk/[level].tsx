@@ -13,7 +13,7 @@ export default function Hsk() {
   const { level } = router.query
   const [hskData, setHskData] = useState(undefined)
   const [currentQuestion, setCurrentQuestion] = useState(undefined)
-  const [questionParameter, setQuestionParameter] = useState(undefined)
+  const [questionParameter, setQuestionParameter] = useState<QuestionParameter | undefined>(undefined)
 
   const getRandomInt = (max, forbiddenInt) => {
     const randomId = Math.floor(Math.random() * Math.floor(max))
@@ -30,7 +30,7 @@ export default function Hsk() {
         setCurrentQuestion({
           index: currentQuestion.index + 1,
           expected: hskData[currentQuestion.index + 1],
-          proposals: getRandomProposal(currentQuestion.index + 1, hskData.length).map(
+          proposals: getRandomProposal(currentQuestion.index + 1, hskData.length, questionParameter).map(
             (key) => hskData[key]
           ),
         })
@@ -44,10 +44,10 @@ export default function Hsk() {
     }
   }
 
-  function getRandomProposal(currentQuestion: number, size: number) {
+  function getRandomProposal(currentQuestion: number, size: number, paramater: QuestionParameter) {
     const proposals = [
       currentQuestion,
-      ...new Array(3).fill(undefined).map(() => getRandomInt(size - 1, currentQuestion)),
+      ...new Array(paramater.numberOfProposal - 1).fill(undefined).map(() => getRandomInt(size - 1, currentQuestion)),
     ]
     return shuffleArray(proposals)
   }
@@ -57,7 +57,7 @@ export default function Hsk() {
     setCurrentQuestion({
       index: 0,
       expected: hskData[0],
-      proposals: getRandomProposal(0, hskData.length).map((key) => hskData[key]),
+      proposals: getRandomProposal(0, hskData.length, parameters).map((key) => hskData[key]),
     })
   }
 

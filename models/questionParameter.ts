@@ -1,3 +1,4 @@
 export interface QuestionParameter {
-  pinyin: boolean
+  pinyin: boolean;
+  numberOfProposal: number;
 }
