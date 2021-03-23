@@ -12,4 +12,16 @@
       padding-left: 0.5rem;
     }
   }
+
+  &NumberOfProposal {
+    margin-bottom: 1rem;
+
+    & > input {
+      width: 2rem;
+    }
+
+    & > label {
+      padding-left: 0.5rem;
+    }
+  }
 }

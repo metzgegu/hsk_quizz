@@ -8,10 +8,11 @@ interface Props {
 
 export default function Parameter({ onSubmit }: Props) {
   const [pinyin, setPinyin] = useState(false)
+  const [numberOfProposal, setNumberOfProposal] = useState(4)
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    onSubmit({ pinyin })
+    onSubmit({ pinyin, numberOfProposal })
   }
 
   return (
@@ -28,6 +29,19 @@ export default function Parameter({ onSubmit }: Props) {
         />
         <label htmlFor="pinyin">Display pinyin</label>
       </div>
+
+    <div className={styles.formNumberOfProposal}>
+        <input
+            type="number"
+            name="numberOfProposal"
+            id="numberOfProposal"
+            value={numberOfProposal}
+            min="1"
+            max="10"
+            onChange={(e) => setNumberOfProposal(parseInt(e.target.value))}
+        />
+        <label>Number of proposal</label>
+    </div>
 
       <button type="submit">GO</button>
     </form>
