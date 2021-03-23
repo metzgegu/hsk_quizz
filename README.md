@@ -1,6 +1,6 @@
 # Simple quizz
 
-The goal of this project is to create a simple quizz with a simple `json` file which describe a quiz
+The goal of this project is to create a simple hsk quizz
 
 ## Available Scripts
 
