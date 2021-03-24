@@ -15,4 +15,8 @@ button {
   padding: 9px;
   cursor: pointer;
   width: 100%;
+
+  &:hover {
+    background-color: #eee3e2;
+  }
 }

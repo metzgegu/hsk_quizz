@@ -25,17 +25,19 @@
   text-align: center;
 
   & b {
-    font-size: 36px;
+    font-size: 2rem;
     color: #ebb17c;
   }
 
   & p {
     font-weight: bold;
   }
+}
 
-  & .chinese {
-    font-family: 'Ma Shan Zheng', cursive;
-  }
+.chinese {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Ma Shan Zheng', cursive;
 }
 
 .incorrect {
