@@ -3,6 +3,7 @@ import styles from './Question.module.scss'
 import { Question as QuestionInterface } from '../models/question'
 import { QuestionParameter } from '../models/questionParameter'
 import { HskData } from '../models/hskData'
+import { QuestionTypes } from '../utils/helper'
 
 interface Props {
   question: QuestionInterface
@@ -11,15 +12,30 @@ interface Props {
 }
 
 export default function Question({ question, onSubmitResponse, questionParameter }: Props) {
+  const questionLabel =
+    questionParameter.questionType === QuestionTypes.HANZI_TO_TRANSLATIONS
+      ? question.expected.hanzi
+      : question.expected.translations[0]
+
+  const getProposalLabel = (proposal: HskData) => {
+    return questionParameter.questionType === QuestionTypes.HANZI_TO_TRANSLATIONS
+      ? proposal.translations[0]
+      : proposal.hanzi
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.name}>
         What does mean :
         <br />
-        <b className={question.expected.hanzi.match(/[\u3400-\u9FBF]/) ? 'chinese' : ''}>
-          {question.expected.hanzi}
+        <br />
+        <b className={questionLabel.match(/[\u3400-\u9FBF]/) ? styles.chinese : ''}>
+          {questionLabel}
         </b>
-        {questionParameter.pinyin && <p>{question.expected.pinyin}</p>}
+        {questionParameter.pinyin &&
+          questionParameter.questionType === QuestionTypes.HANZI_TO_TRANSLATIONS && (
+            <p>{question.expected.pinyin}</p>
+          )}
       </div>
       <div className={styles.proposals}>
         <ul>
@@ -30,7 +46,17 @@ export default function Question({ question, onSubmitResponse, questionParameter
                   onClick={() => onSubmitResponse(proposal)}
                   className={proposal.incorrect ? styles.incorrect : ''}
                 >
-                  {proposal.translations[0]}
+                  <span
+                    className={
+                      getProposalLabel(proposal).match(/[\u3400-\u9FBF]/) ? styles.chinese : ''
+                    }
+                  >
+                    {getProposalLabel(proposal)}
+                  </span>
+                  {questionParameter.pinyin &&
+                    questionParameter.questionType === QuestionTypes.TRANSLATIONS_TO_HANZI && (
+                      <p>{proposal.pinyin}</p>
+                    )}
                 </button>
               </li>
             ))}
