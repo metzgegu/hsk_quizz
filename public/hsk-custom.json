@@ -1,0 +1,301 @@
+[
+    {
+        "id": 1,
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "translations": [
+          "good",
+          "well",
+          "proper",
+          "good to",
+          "easy to",
+          "very",
+          "so",
+          "(suffix indicating completion or readiness)"
+        ]
+    },
+    {
+        "id": 2,
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "translations": [
+            "you (informal",
+            "as opposed to courteous 您)"
+        ]
+    },
+    {
+        "id": 3,
+        "hanzi": "我们",
+        "pinyin": "wǒ men",
+        "translations": [
+          "we",
+          "us",
+          "ourselves",
+          "our"
+        ]
+      },
+      {
+        "id": 4,
+        "hanzi": "对不起",
+        "pinyin": "duì bu qǐ",
+        "translations": [
+          "unworthy",
+          "to let down",
+          "I'm sorry",
+          "excuse me",
+          "pardon me",
+          "if you please",
+          "sorry? (please repeat)"
+        ]
+      },
+      {
+        "id": 5,
+        "hanzi": "不",
+        "pinyin": "bù",
+        "translations": [
+          "(negative prefix)",
+          "not",
+          "no"
+        ]
+      },
+      {
+        "id": 6,
+        "hanzi": "没关系",
+        "pinyin": "méi guān xi",
+        "translations": [
+          "it doesn't matter"
+        ]
+      },
+      {
+        "id": 7,
+        "hanzi": "没",
+        "pinyin": "méi",
+        "translations": [
+          "(negative prefix for verbs)",
+          "have not",
+          "not"
+        ]
+      },
+      {
+        "id": 8,
+        "hanzi": "谢谢",
+        "pinyin": "xiè xie",
+        "translations": [
+          "to thank",
+          "thanks"
+        ]
+      },
+      {
+        "id": 7,
+        "hanzi": "不客气",
+        "pinyin": "bù kè qi",
+        "translations": [
+          "you're welcome",
+          "impolite",
+          "rude",
+          "blunt",
+          "don't mention it"
+        ]
+      },
+      {
+        "id": 8,
+        "hanzi": "再见",
+        "pinyin": "zài jiàn",
+        "translations": [
+          "goodbye",
+          "see you again later"
+        ]
+      },
+      {
+        "id": 9,
+        "hanzi": "叫",
+        "pinyin": "jiào",
+        "translations": [
+          "to shout",
+          "to call",
+          "to order",
+          "to ask",
+          "to be called",
+          "by (indicates agent in the passive mood)"
+        ]
+      },
+      {
+        "id": 10,
+        "hanzi": "什么",
+        "pinyin": "shén me",
+        "translations": [
+          "what?",
+          "who?",
+          "something",
+          "anything"
+        ]
+      },
+      {
+        "id": 11,
+        "hanzi": "名字",
+        "pinyin": "míng zi",
+        "translations": [
+          "name (of a person or thing)",
+          "CL:個|个[gè]"
+        ]
+      },
+      {
+        "id": 12,
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "translations": [
+          "I",
+          "me",
+          "my"
+        ]
+      },
+      {
+        "id": 13,
+        "hanzi": "是",
+        "pinyin": "shì",
+        "translations": [
+          "is",
+          "are",
+          "am",
+          "yes",
+          "to be"
+        ]
+      },
+      {
+        "id": 14,
+        "hanzi": "老师",
+        "pinyin": "lǎo shī",
+        "translations": [
+          "teacher",
+          "CL:個|个",
+          "位[wèi]"
+        ]
+      },
+      {
+        "id": 15,
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "translations": [
+          "(question tag)"
+        ]
+      },
+      {
+        "id": 16,
+        "hanzi": "学生",
+        "pinyin": "xué sheng",
+        "translations": [
+          "student",
+          "schoolchild"
+        ]
+      },
+      {
+        "id": 17,
+        "hanzi": "人",
+        "pinyin": "rén",
+        "translations": [
+          "man",
+          "person",
+          "people",
+          "CL:個|个",
+          "位[wèi]"
+        ]
+      },
+      {
+        "id": 18,
+        "hanzi": "他",
+        "pinyin": "tā",
+        "translations": [
+          "he or him",
+          "(used for either sex when the sex is unknown or unimportant)",
+          "(used before sb's name for emphasis)",
+          "(used as a meaningless mock object)",
+          "other",
+          "another"
+        ]
+      },
+      {
+        "id": 19,
+        "hanzi": "谁",
+        "pinyin": "shéi",
+        "translations": [
+          "who",
+          "also pr. [shuí]"
+        ]
+      },
+      {
+        "id": 20,
+        "hanzi": "的",
+        "pinyin": "de",
+        "translations": [
+          "of",
+          "~'s (possessive particle)",
+          "(used after an attribute)",
+          "(used to form a nominal expression)",
+          "(used at the end of a declarative sentence for emphasis)"
+        ]
+      },
+      {
+        "id": 21,
+        "hanzi": "汉语",
+        "pinyin": "Hàn yǔ",
+        "translations": [
+          "Chinese language",
+          "CL:門|门[mén]"
+        ]
+      },
+      {
+        "id": 22,
+        "hanzi": "哪",
+        "pinyin": "nǎ",
+        "translations": [
+          "how",
+          "which"
+        ]
+      },
+      {
+        "id": 23,
+        "hanzi": "中国",
+        "pinyin": "Zhōng guó",
+        "translations": [
+          "China",
+          "Middle Kingdom"
+        ]
+      },
+      {
+        "id": 24,
+        "hanzi": "呢",
+        "pinyin": "ne",
+        "translations": [
+          "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\"",
+          "\"And ...?\")",
+          "particle for inquiring about location (\"Where is ...?\")",
+          "particle signaling a pause",
+          "to emphasize the preceding words and allow the listener time to take them on board (\"ok?\"",
+          "\"are you with me?\")",
+          "(at the end of a declarative sentence) particle indicating continuation of a state or action",
+          "particle indicating strong affirmation"
+        ]
+      },
+      {
+        "id": 25,
+        "hanzi": "同学",
+        "pinyin": "tóng xué",
+        "translations": [
+          "to study at the same school",
+          "fellow student",
+          "classmate",
+          "CL:位",
+          "個|个[gè]"
+        ]
+      },
+      {
+        "id": 26,
+        "hanzi": "朋友",
+        "pinyin": "péng you",
+        "translations": [
+          "friend",
+          "CL:個|个",
+          "位[wèi]"
+        ]
+      }
+]

@@ -24,6 +24,7 @@ export default function Home() {
           <button onClick={() => router.push('hsk/4')}>HSK 4</button>
           <button onClick={() => router.push('hsk/6')}>HSK 5</button>
           <button onClick={() => router.push('hsk/6')}>HSK 6</button>
+          <button onClick={() => router.push('hsk/custom')}>Custom json file</button>
         </div>
       </main>
     </div>
