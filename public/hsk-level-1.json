@@ -10,15 +10,7 @@
         "to like"
       ]
     },
-    {
-      "id": 2,
-      "hanzi": "八",
-      "pinyin": "bā",
-      "translations": [
-        "eight",
-        "8"
-      ]
-    },
+    
     {
       "id": 3,
       "hanzi": "爸爸",
@@ -128,22 +120,7 @@
         "to make a telephone call"
       ]
     },
-    {
-      "id": 14,
-      "hanzi": "大",
-      "pinyin": "dà",
-      "translations": [
-        "big",
-        "huge",
-        "large",
-        "major",
-        "great",
-        "wide",
-        "deep",
-        "oldest",
-        "eldest"
-      ]
-    },
+    
     
     {
       "id": 16,
@@ -240,22 +217,7 @@
       ]
     },
     
-    {
-      "id": 24,
-      "hanzi": "多",
-      "pinyin": "duō",
-      "translations": [
-        "many",
-        "much",
-        "a lot of",
-        "numerous",
-        "more",
-        "in excess",
-        "how (to what extent)",
-        "multi-",
-        "Taiwan pr.  when it means \"how\""
-      ]
-    },
+   
     {
       "id": 25,
       "hanzi": "多少",
@@ -275,16 +237,7 @@
         "son"
       ]
     },
-    {
-      "id": 27,
-      "hanzi": "二",
-      "pinyin": "èr",
-      "translations": [
-        "two",
-        "2",
-        "stupid (Beijing dialect)"
-      ]
-    },
+    
     {
       "id": 28,
       "hanzi": "饭馆",
@@ -444,53 +397,11 @@
         "train station"
       ]
     },
-    {
-      "id": 44,
-      "hanzi": "几",
-      "pinyin": "jǐ",
-      "translations": [
-        "how much",
-        "how many",
-        "several",
-        "a few"
-      ]
-    },
-    {
-      "id": 45,
-      "hanzi": "家",
-      "pinyin": "jiā",
-      "translations": [
-        "home",
-        "family",
-        "classifier for families or businesses",
-        "refers to the philosophical schools of pre-Han China",
-        "noun suffix for specialists in some activity such as musician or revolutionary",
-        "corresponds to English -ist",
-        "-er",
-        "-ary or -ian",
-        "CL:個|个[gè]"
-      ]
-    },
     
-    {
-      "id": 47,
-      "hanzi": "今天",
-      "pinyin": "jīn tiān",
-      "translations": [
-        "today",
-        "at the present",
-        "now"
-      ]
-    },
-    {
-      "id": 48,
-      "hanzi": "九",
-      "pinyin": "jiǔ",
-      "translations": [
-        "nine",
-        "9"
-      ]
-    },
+    
+    
+    
+    
     {
       "id": 49,
       "hanzi": "开",
@@ -565,15 +476,7 @@
       ]
     },
     
-    {
-      "id": 55,
-      "hanzi": "了",
-      "pinyin": "le",
-      "translations": [
-        "(modal particle intensifying preceding clause)",
-        "(completed action marker)"
-      ]
-    },
+    
     {
       "id": 56,
       "hanzi": "冷",
@@ -615,15 +518,7 @@
         "to wither"
       ]
     },
-    {
-      "id": 59,
-      "hanzi": "六",
-      "pinyin": "liù",
-      "translations": [
-        "six",
-        "6"
-      ]
-    },
+    
     {
       "id": 60,
       "hanzi": "妈妈",
@@ -703,23 +598,7 @@
         "(usually used in the negative) to have the possibility of"
       ]
     },
-    {
-      "id": 74,
-      "hanzi": "年",
-      "pinyin": "nián",
-      "translations": [
-        "year",
-        "CL:個|个[gè]"
-      ]
-    },
-    {
-      "id": 75,
-      "hanzi": "女儿",
-      "pinyin": "nǚ ér",
-      "translations": [
-        "daughter"
-      ]
-    },
+    
     
     {
       "id": 77,
@@ -740,15 +619,7 @@
         "顆|颗[kē]"
       ]
     },
-    {
-      "id": 79,
-      "hanzi": "七",
-      "pinyin": "qī",
-      "translations": [
-        "seven",
-        "7"
-      ]
-    },
+    
     {
       "id": 80,
       "hanzi": "钱",
@@ -841,15 +712,7 @@
         "abbr. for 日本 Japan"
       ]
     },
-    {
-      "id": 88,
-      "hanzi": "三",
-      "pinyin": "sān",
-      "translations": [
-        "three",
-        "3"
-      ]
-    },
+   
     {
       "id": 89,
       "hanzi": "商店",
@@ -899,15 +762,7 @@
     },
     
     
-    {
-      "id": 95,
-      "hanzi": "十",
-      "pinyin": "shí",
-      "translations": [
-        "ten",
-        "10"
-      ]
-    },
+   
     {
       "id": 96,
       "hanzi": "时候",
@@ -978,25 +833,8 @@
         "word"
       ]
     },
-    {
-      "id": 103,
-      "hanzi": "四",
-      "pinyin": "sì",
-      "translations": [
-        "four",
-        "4"
-      ]
-    },
-    {
-      "id": 104,
-      "hanzi": "岁",
-      "pinyin": "suì",
-      "translations": [
-        "classifier for years (of age)",
-        "year",
-        "year (of crop harvests)"
-      ]
-    },
+    
+   
     
     {
       "id": 106,
@@ -1048,15 +886,7 @@
       ]
     },
     
-    {
-      "id": 114,
-      "hanzi": "五",
-      "pinyin": "wǔ",
-      "translations": [
-        "five",
-        "5"
-      ]
-    },
+    
     {
       "id": 115,
       "hanzi": "喜欢",
@@ -1211,23 +1041,7 @@
         "CL:所[suǒ]"
       ]
     },
-    {
-      "id": 131,
-      "hanzi": "一",
-      "pinyin": "yī",
-      "translations": [
-        "one",
-        "1",
-        "single",
-        "a (article)",
-        "as soon as",
-        "entire",
-        "whole",
-        "all",
-        "throughout",
-        "\"one\" radical in Chinese characters (Kangxi radical 1)"
-      ]
-    },
+    
     {
       "id": 132,
       "hanzi": "衣服",
@@ -1270,18 +1084,7 @@
         "套[tào]"
       ]
     },
-    {
-      "id": 136,
-      "hanzi": "有",
-      "pinyin": "yǒu",
-      "translations": [
-        "to have",
-        "there is",
-        "there are",
-        "to exist",
-        "to be"
-      ]
-    },
+    
     {
       "id": 137,
       "hanzi": "月",

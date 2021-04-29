@@ -298,4 +298,228 @@
           "位[wèi]"
         ]
       }
+      {
+        "id": 27,
+        "hanzi": "家",
+        "pinyin": "jiā",
+        "translations": [
+          "home",
+          "family",
+          "classifier for families or businesses",
+          "refers to the philosophical schools of pre-Han China",
+          "noun suffix for specialists in some activity such as musician or revolutionary",
+          "corresponds to English -ist",
+          "-er",
+          "-ary or -ian",
+          "CL:個|个[gè]"
+        ]
+      },
+      {
+        "id": 28,
+        "hanzi": "九",
+        "pinyin": "jiǔ",
+        "translations": [
+          "nine",
+          "9"
+        ]
+      },
+      {
+        "id": 29,
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "translations": [
+          "to have",
+          "there is",
+          "there are",
+          "to exist",
+          "to be"
+        ]
+      },
+      {
+        "id": 30,
+        "hanzi": "多",
+        "pinyin": "duō",
+        "translations": [
+          "many",
+          "much",
+          "a lot of",
+          "numerous",
+          "more",
+          "in excess",
+          "how (to what extent)",
+          "multi-",
+          "Taiwan pr.  when it means \"how\""
+        ]
+      },
+      {
+        "id": 31,
+        "hanzi": "口",
+        "pinyin": "kou",
+        "translations": [
+          "mouth"
+        ]
+      },
+      {
+        "id": 32,
+        "hanzi": "几",
+        "pinyin": "jǐ",
+        "translations": [
+          "how much",
+          "how many",
+          "several",
+          "a few"
+        ]
+      },
+      {
+        "id": 33,
+        "hanzi": "岁",
+        "pinyin": "suì",
+        "translations": [
+          "classifier for years (of age)",
+          "year",
+          "year (of crop harvests)"
+        ]
+      },
+      {
+        "id": 34,
+        "hanzi": "了",
+        "pinyin": "le",
+        "translations": [
+          "(modal particle intensifying preceding clause)",
+          "(completed action marker)"
+        ]
+      },
+      {
+        "id": 35,
+        "hanzi": "今天",
+        "pinyin": "jīn tiān",
+        "translations": [
+          "today",
+          "at the present",
+          "now"
+        ]
+      },
+      {
+        "id": 36,
+        "hanzi": "年",
+        "pinyin": "nián",
+        "translations": [
+          "year",
+          "CL:個|个[gè]"
+        ]
+      },
+      {
+        "id": 37,
+        "hanzi": "女儿",
+        "pinyin": "nǚ ér",
+        "translations": [
+          "daughter"
+        ]
+      },
+      {
+        "id": 38,
+        "hanzi": "大",
+        "pinyin": "dà",
+        "translations": [
+          "big",
+          "huge",
+          "large",
+          "major",
+          "great",
+          "wide",
+          "deep",
+          "oldest",
+          "eldest"
+        ]
+      },
+      {
+        "id": 39,
+        "hanzi": "一",
+        "pinyin": "yī",
+        "translations": [
+          "one",
+          "1",
+          "single",
+          "a (article)",
+          "as soon as",
+          "entire",
+          "whole",
+          "all",
+          "throughout",
+          "\"one\" radical in Chinese characters (Kangxi radical 1)"
+        ]
+      },
+      {
+        "id": 40,
+        "hanzi": "二",
+        "pinyin": "èr",
+        "translations": [
+          "two",
+          "2",
+          "stupid (Beijing dialect)"
+        ]
+      },
+      {
+        "id": 41,
+        "hanzi": "三",
+        "pinyin": "sān",
+        "translations": [
+          "three",
+          "3"
+        ]
+      },
+      {
+        "id": 42,
+        "hanzi": "四",
+        "pinyin": "sì",
+        "translations": [
+          "four",
+          "4"
+        ]
+      },
+      {
+        "id": 43,
+        "hanzi": "五",
+        "pinyin": "wǔ",
+        "translations": [
+          "five",
+          "5"
+        ]
+      },
+      {
+        "id": 44,
+        "hanzi": "六",
+        "pinyin": "liù",
+        "translations": [
+          "six",
+          "6"
+        ]
+      },
+      {
+        "id": 45,
+        "hanzi": "七",
+        "pinyin": "qī",
+        "translations": [
+          "seven",
+          "7"
+        ]
+      },
+      {
+        "id": 46,
+        "hanzi": "八",
+        "pinyin": "bā",
+        "translations": [
+          "eight",
+          "8"
+        ]
+      },
+      {
+        "id": 47,
+        "hanzi": "十",
+        "pinyin": "shí",
+        "translations": [
+          "ten",
+          "10"
+        ]
+      }
 ]
