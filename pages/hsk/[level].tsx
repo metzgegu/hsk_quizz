@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import { getHskData } from '../../utils/actions.async'
 import { shuffleArray } from '../../utils/helper'
 import Question from '../../components/Question'
-import styles from '../../styles/Home.module.scss'
 import Parameter from '../../components/Parameter'
 import { QuestionParameter } from '../../models/questionParameter'
 import { HskData } from '../../models/hskData'
@@ -85,7 +84,7 @@ export default function Hsk(): JSX.Element {
   })
 
   return (
-    <div className={styles.container}>
+    <div className="flex flex-col items-center py-8 px-2">
       {level && <h1>Hsk {level}</h1>}
       {currentQuestion && hskData && (
         <>
@@ -94,7 +93,7 @@ export default function Hsk(): JSX.Element {
             onSubmitResponse={handleSubmitResponse}
             questionParameter={questionParameter}
           ></Question>
-          <div className={styles.result}>
+          <div className="mb-1">
             {currentResult.correctAnswer} / {currentResult.responseTotal}
           </div>
         </>

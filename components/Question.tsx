@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './Question.module.scss'
 import { Question as QuestionInterface } from '../models/question'
 import { QuestionParameter } from '../models/questionParameter'
 import { HskData } from '../models/hskData'
@@ -28,32 +27,28 @@ export default function Question({
   }
 
   return (
-    <div className={styles.container}>
-      <div className={styles.name}>
+    <div className="items-center min-h-40 min-w-40 ">
+      <div className="text-center">
         What does mean :
         <br />
         <br />
-        <b className={questionLabel.match(/[\u3400-\u9FBF]/) ? styles.chinese : ''}>
-          {questionLabel}
-        </b>
+        <b className={questionLabel.match(/[\u3400-\u9FBF]/) ? 'chinese' : ''}>{questionLabel}</b>
         {questionParameter.pinyin &&
           questionParameter.questionType === QuestionTypes.HANZI_TO_TRANSLATIONS && (
-            <p>{question.expected.pinyin}</p>
+            <p className="font-bold">{question.expected.pinyin}</p>
           )}
       </div>
-      <div className={styles.proposals}>
-        <ul>
+      <div className="justify-center flex-row w-full">
+        <ul className="list-none w-full p-0">
           {question.proposals &&
             question.proposals.map((proposal) => (
-              <li key={proposal.id}>
+              <li key={proposal.id} className="my-2.5 mx-0 w-full">
                 <button
                   onClick={() => onSubmitResponse(proposal)}
-                  className={proposal.incorrect ? styles.incorrect : ''}
+                  className={proposal.incorrect ? 'incorrect' : ''}
                 >
                   <span
-                    className={
-                      getProposalLabel(proposal).match(/[\u3400-\u9FBF]/) ? styles.chinese : ''
-                    }
+                    className={getProposalLabel(proposal).match(/[\u3400-\u9FBF]/) ? 'chinese' : ''}
                   >
                     {getProposalLabel(proposal)}
                   </span>

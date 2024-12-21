@@ -1,23 +1,22 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
 import { useRouter } from 'next/router'
 
 export default function Home(): JSX.Element {
   const router = useRouter()
 
   return (
-    <div className={styles.container}>
+    <div className="flex flex-col items-center py-8 px-2">
       <Head>
         <title>HSK Quizz</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>HSK Quizz Test</h1>
+      <main>
+        <h1 className="text-3xl px-4">HSK Quizz Test</h1>
 
-        <p className={styles.description}>Choose your level :</p>
+        <p>Choose your level :</p>
 
-        <div className={styles.links}>
+        <div className="flex flex-col gap-4">
           <button onClick={() => router.push('hsk/1')}>HSK 1</button>
           <button onClick={() => router.push('hsk/2')}>HSK 2</button>
           <button onClick={() => router.push('hsk/3')}>HSK 3</button>
