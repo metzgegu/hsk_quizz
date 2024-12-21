@@ -40,8 +40,8 @@ export default function Question({ question, onSubmitResponse, questionParameter
       <div className={styles.proposals}>
         <ul>
           {question.proposals &&
-            question.proposals.map((proposal, index) => (
-              <li key={index}>
+            question.proposals.map((proposal) => (
+              <li key={proposal.id}>
                 <button
                   onClick={() => onSubmitResponse(proposal)}
                   className={proposal.incorrect ? styles.incorrect : ''}
