@@ -3,10 +3,10 @@ export enum QuestionTypes {
   TRANSLATIONS_TO_HANZI = 'translationsToHanzi',
 }
 
-export const shuffleArray = (a) => {
-  for (let i = a.length - 1; i > 0; i--) {
+export const shuffleArray = <T>(numbers: T[]): T[] => {
+  for (let i = numbers.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
-    ;[a[i], a[j]] = [a[j], a[i]]
+    ;[numbers[i], numbers[j]] = [numbers[j], numbers[i]]
   }
-  return a
+  return numbers
 }

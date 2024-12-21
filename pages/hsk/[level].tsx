@@ -9,7 +9,7 @@ import { QuestionParameter } from '../../models/questionParameter'
 import { HskData } from '../../models/hskData'
 import { Result } from '../../models/result'
 
-export default function Hsk() {
+export default function Hsk(): JSX.Element {
   const router = useRouter()
   const { level } = router.query
   const [hskData, setHskData] = useState(undefined)
@@ -19,7 +19,7 @@ export default function Hsk() {
   )
   const [currentResult, setCurrentResult] = useState<Result>({ responseTotal: 0, correctAnswer: 0 })
 
-  const getRandomInt = (max, forbiddenInt) => {
+  const getRandomInt = (max, forbiddenInt): number => {
     const randomId = Math.floor(Math.random() * Math.floor(max))
     if (forbiddenInt === randomId) {
       return getRandomInt(max, forbiddenInt)
@@ -28,7 +28,7 @@ export default function Hsk() {
     }
   }
 
-  const handleSubmitResponse = (proposal: HskData) => {
+  const handleSubmitResponse = (proposal: HskData): void => {
     if (currentQuestion.expected.id === proposal.id) {
       setCurrentResult({
         responseTotal: currentResult.responseTotal + 1,
@@ -55,7 +55,11 @@ export default function Hsk() {
     }
   }
 
-  function getRandomProposal(currentQuestion: number, size: number, paramater: QuestionParameter) {
+  function getRandomProposal(
+    currentQuestion: number,
+    size: number,
+    paramater: QuestionParameter
+  ): number[] {
     const proposals = [
       currentQuestion,
       ...new Array(paramater.numberOfProposal - 1)
@@ -65,7 +69,7 @@ export default function Hsk() {
     return shuffleArray(proposals)
   }
 
-  function handleParameterSubmit(parameters: QuestionParameter) {
+  function handleParameterSubmit(parameters: QuestionParameter): void {
     setQuestionParameter(parameters)
     setCurrentQuestion({
       index: 0,

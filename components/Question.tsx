@@ -11,13 +11,17 @@ interface Props {
   questionParameter: QuestionParameter
 }
 
-export default function Question({ question, onSubmitResponse, questionParameter }: Props) {
+export default function Question({
+  question,
+  onSubmitResponse,
+  questionParameter,
+}: Props): JSX.Element {
   const questionLabel =
     questionParameter.questionType === QuestionTypes.HANZI_TO_TRANSLATIONS
       ? question.expected.hanzi
       : question.expected.translations[0]
 
-  const getProposalLabel = (proposal: HskData) => {
+  const getProposalLabel = (proposal: HskData): string => {
     return questionParameter.questionType === QuestionTypes.HANZI_TO_TRANSLATIONS
       ? proposal.translations[0]
       : proposal.hanzi

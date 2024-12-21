@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import { useRouter } from 'next/router'
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const router = useRouter()
 
   return (

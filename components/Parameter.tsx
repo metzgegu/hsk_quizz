@@ -7,17 +7,17 @@ interface Props {
   onSubmit: (param: QuestionParameter) => void
 }
 
-export default function Parameter({ onSubmit }: Props) {
+export default function Parameter({ onSubmit }: Props): JSX.Element {
   const [pinyin, setPinyin] = useState(false)
   const [numberOfProposal, setNumberOfProposal] = useState(4)
   const [questionType, setQuestionType] = useState(QuestionTypes.HANZI_TO_TRANSLATIONS)
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event): void => {
     event.preventDefault()
     onSubmit({ pinyin, numberOfProposal, questionType })
   }
 
-  const handleChangeQuestionType = (event) => {
+  const handleChangeQuestionType = (event): void => {
     event.preventDefault()
     console.log(questionType)
     setQuestionType(
