@@ -11,7 +11,8 @@
     "lint:eslint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
-    "next": "11",
+    "eslint-config-next": "12",
+    "next": "12",
     "prop-types": "15.7.2",
     "react": "17",
     "react-dom": "17",
